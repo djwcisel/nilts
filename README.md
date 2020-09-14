@@ -7,9 +7,9 @@ This is meant to detail how to the use the various scripts that went into analyz
 
 Published NILTs used in blast searches against the zebrafish genome revealed numerious hits to chromosome one. These hits are restricted to scaffolds which have changed names with each new version of the genome.
 
-*GRCz11 - CTG111
-*GRCz10 - CTG112
-*Zv9 - Scaffold 100 and Scaffold 101
+*GRCz11 - CTG111*
+*GRCz10 - CTG112*
+*Zv9 - Scaffold 100 and Scaffold 101*
 
 Tracing the history of these scaffolds, it became clear that Zv9 scaffold 100 was removed and Scaffold 101 was modified into CTG111. As we noted many differences in BLAST hits between 100 and 101 reminescent of gene-content haplotypes, we decided to include 100, 101, anc 111 in our analyses.
 
@@ -57,7 +57,7 @@ A total of 372 Ig domains were found among the three scaffolds. Particularily co
 
 The BLAST results were searched for NILTY terms: *CD300|NILT|polymeric\CMRF*. Additionally CD22/B-Cell receptors and sialic acid-binding proteins were found in abundance. There was no overlap in Ig sequences between the NILTY and Non-NILTY search terms. Additioanlly, the Non-NILTY Ig domains were clustered together at the start of CTG111 and NILTY Ig domains were clustered at the end of CTG111. Only a few Igs between these clusters crossed over into the other's cluster. Non-NILTY Ig domains were removed from the *smart_parsed_hmmer_out.tsv* and not considered in additional analyses.
 
-# Identification of Annotated Genes Containing NILT Igs
+## Identification of Annotated Genes Containing NILT Igs
 
 The currated table produced by *smart_hmmer_parser.pl* provides both scaffold and chromosomal nucleotide start and stop positions of NILT Ig domains. These can be placed in a tsv formated, for example 100_665\t58186270\t58186607. This list can be checked against Ensembl of RefSeq gff files for any exons that overlap. Short-coming of these scripts in that if the exon is used for multiple different transcripts, only one transcript is reported.
 
